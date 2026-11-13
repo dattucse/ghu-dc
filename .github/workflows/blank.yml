@@ -8,7 +8,7 @@ jobs:
         run: echo "build step added"
   test:
     runs-on: ubuntu-latest
-    nees: build
+    needs: build
     steps:
       - name: test step
         run: echo "test step added"
