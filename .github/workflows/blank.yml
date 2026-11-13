@@ -1,9 +1,19 @@
 name: homebuild
 on: workflow_dispatch
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: hello step
-        run: echo "hello step added"
+      - name: build step
+        run: echo "build step added"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test step
+        run: echo "test step added"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy step
+        run: echo "deploy step added"
       
