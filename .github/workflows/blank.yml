@@ -1,0 +1,9 @@
+name: homebuild
+on: workflow_dispatch
+jobs:
+  hello:
+    runs-on: uubuntu-latest
+    steps:
+      - name: hello step
+        run: echo "hello step added"
+      
