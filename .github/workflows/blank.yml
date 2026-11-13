@@ -14,11 +14,11 @@ jobs:
     needs: build
     steps:
       - name: test step
-        run: echo "test step added"
+        run: echo "test step added."
   deploy:
     runs-on: ubuntu-latest
     needs: test
     steps:
       - name: deploy step
-        run: echo "deploy step added"
+        run: echo "deploy step added."
       
